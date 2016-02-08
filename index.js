@@ -13,6 +13,10 @@ server.get('/hello', function(req, res) {
   res.send('Hello Origin');
 });
 
+server.get('/github', function(req, res) {
+  res.send('Webhooks Work!');
+});
+
 server.listen(port, ip, function(){
   console.log('%s listening at %s', server.name, server.url);
 });
