@@ -7,7 +7,7 @@ function respond(req, res, next) {
 
 var server = restify.createServer();
 server.get('/hello/:test', respond);
-server.get('/', console.log("Hello Origin"));
+server.get('/', respond);
 
 server.listen(8080, function() {
   console.log('%s listing at %s', server.name, server.url);
