@@ -9,7 +9,7 @@ server.get('/hello/:test', function (req, res) {
   res.send('Hello ' + req.params.test);
 });
 
-server.get('/', function(req, res) {
+server.get('/hello', function(req, res) {
   res.send('Hello Origin');
 });
 
