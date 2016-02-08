@@ -1,6 +1,6 @@
 const restify = require('restify');
 
-var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8081;
+var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 3000;
 var ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 var server = restify.createServer();
